@@ -197,23 +197,7 @@ $$\text{OpeningStock}(t+1) = \text{ClosingStock}(t)$$
 
 ---
 
-## 6. Technical Architecture & Decision Support Guide
-
-### Core Conceptual Questions
-1. **Why use synthetic simulation data?**
-   - Live pharmacy transaction logs rarely capture true unfulfilled demand (stockouts mask demand) and supplier lead-time delays with known ground truth. Synthetic simulation allows complete control over counterfactual events while establishing exact causal ground truth.
-2. **Why separate demand from sales?**
-   - $\text{Sales} = \min(\text{Demand}, \text{Usable Stock})$. If demand were trained on sales, stockouts would artificially suppress forecasted demand, causing chronic under-ordering.
-3. **Why use chronological splitting instead of k-fold cross-validation?**
-   - Time-series data has temporal autocorrelation. Random shuffling allows future demand and seasonal signals to leak into past predictions, producing unrealistically optimistic accuracy that collapses in production.
-4. **Why dual-task modeling for expiry?**
-   - Classification flags high-risk batches needing immediate managerial attention (binary alert), while regression estimates exact unit loss to calculate precise PKR financial exposure for accounting write-down provisions.
-5. **Why prioritize Recall in stockout prediction?**
-   - A false positive results in minor temporary safety inventory, whereas a false negative causes a complete medicine stockout, patient treatment disruption, and lost customer goodwill.
-
----
-
-## 7. Deliverable Verification Commands
+## 6. Deliverable Verification Commands
 
 ```bash
 # Run automated data validation suite
