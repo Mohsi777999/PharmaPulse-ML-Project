@@ -1,0 +1,151 @@
+medicine_id,medicine_name,generic_name,brand_name,category_id,dosage_form,strength,unit_of_measure,unit_cost,selling_price,reorder_level,target_stock_days,shelf_life_days,demand_pattern,preferred_supplier_id,active_status
+MED001,Panadol (Paracetamol) 500mg,Paracetamol,Panadol,CAT001,Tablet,500mg,tablet,4.5,6.78,220,35,120,Seasonal,SUP001,Active
+MED002,Panadol Extra (Paracetamol + Caffeine) 500mg/65mg,Paracetamol + Caffeine,Panadol Extra,CAT001,Tablet,500mg/65mg,tablet,5.79,9.7,286,35,120,Irregular,SUP002,Active
+MED003,Panadol CF (Paracetamol + Pseudoephedrine) 500mg/30mg,Paracetamol + Pseudoephedrine,Panadol CF,CAT001,Tablet,500mg/30mg,tablet,7.99,11.63,198,35,150,Declining,SUP003,Active
+MED004,Brufen (Ibuprofen) 400mg,Ibuprofen,Brufen,CAT001,Tablet,400mg,tablet,6.69,11.33,308,30,120,Irregular,SUP004,Active
+MED005,Brufen DS (Ibuprofen) 200mg/5ml,Ibuprofen,Brufen DS,CAT001,Suspension,200mg/5ml,bottle_120ml,87.69,129.78,308,25,180,Growing,SUP005,Active
+MED006,Disprin (Aspirin) 300mg,Aspirin,Disprin,CAT001,Tablet,300mg,tablet,3.13,4.87,418,25,180,Seasonal,SUP006,Active
+MED007,Disprin CV (Aspirin) 75mg,Aspirin,Disprin CV,CAT001,Tablet,75mg,tablet,3.57,5.46,418,25,120,Irregular,SUP007,Active
+MED008,Ponstan (Mefenamic Acid) 500mg,Mefenamic Acid,Ponstan,CAT001,Tablet,500mg,tablet,8.66,13.69,264,30,180,Consistent,SUP008,Active
+MED009,Ponstan Forte (Mefenamic Acid) 500mg,Mefenamic Acid,Ponstan Forte,CAT001,Tablet,500mg,tablet,12.11,17.29,528,25,120,Seasonal,SUP009,Active
+MED010,Voltral (Diclofenac Sodium) 50mg,Diclofenac Sodium,Voltral,CAT001,Tablet,50mg,tablet,11.45,16.97,286,25,90,Consistent,SUP010,Active
+MED011,Voltral SR (Diclofenac Sodium) 75mg,Diclofenac Sodium,Voltral SR,CAT001,Capsule,75mg,capsule,15.65,23.97,176,35,120,Seasonal,SUP001,Active
+MED012,Voltral Emulgel (Diclofenac Diethylamine) 1%,Diclofenac Diethylamine,Voltral Emulgel,CAT001,Gel,1%,tube_50g,136.4,199.57,264,35,180,Growing,SUP002,Active
+MED013,Cataflam (Diclofenac Potassium) 50mg,Diclofenac Potassium,Cataflam,CAT001,Tablet,50mg,tablet,14.4,21.88,264,25,90,Consistent,SUP003,Active
+MED014,Nuberol Forte (Paracetamol + Orphenadrine) 650mg/50mg,Paracetamol + Orphenadrine,Nuberol Forte,CAT001,Tablet,650mg/50mg,tablet,14.51,20.25,330,30,180,Irregular,SUP004,Active
+MED015,Muscoril (Thiocolchicoside) 4mg,Thiocolchicoside,Muscoril,CAT001,Capsule,4mg,capsule,35.8,53.25,308,25,180,Growing,SUP005,Active
+MED016,Ansaid (Flurbiprofen) 100mg,Flurbiprofen,Ansaid,CAT001,Tablet,100mg,tablet,21.32,31.87,396,25,120,Consistent,SUP006,Active
+MED017,Brexin (Piroxicam-beta-cyclodextrin) 20mg,Piroxicam-beta-cyclodextrin,Brexin,CAT001,Tablet,20mg,tablet,29.89,45.32,418,25,150,Irregular,SUP007,Active
+MED018,Feldene (Piroxicam) 20mg,Piroxicam,Feldene,CAT001,Capsule,20mg,capsule,17.19,28.08,220,30,90,Consistent,SUP008,Active
+MED019,Celebrex (Celecoxib) 200mg,Celecoxib,Celebrex,CAT001,Capsule,200mg,capsule,62.83,94.89,484,25,120,Growing,SUP009,Active
+MED020,Arcoxia (Etoricoxib) 90mg,Etoricoxib,Arcoxia,CAT001,Tablet,90mg,tablet,77.32,110.42,308,30,90,Consistent,SUP010,Active
+MED021,Arcoxia 60 (Etoricoxib) 60mg,Etoricoxib,Arcoxia 60,CAT001,Tablet,60mg,tablet,58.71,89.38,242,30,180,Declining,SUP001,Active
+MED022,Naprosyn (Naproxen) 500mg,Naproxen,Naprosyn,CAT001,Tablet,500mg,tablet,15.67,24.9,308,25,120,Irregular,SUP002,Active
+MED023,Synflex (Naproxen Sodium) 550mg,Naproxen Sodium,Synflex,CAT001,Tablet,550mg,tablet,19.11,30.2,198,35,150,Seasonal,SUP003,Active
+MED024,Tramal (Tramadol Hydrochloride) 50mg,Tramadol Hydrochloride,Tramal,CAT001,Capsule,50mg,capsule,25.88,36.69,286,25,90,Irregular,SUP004,Active
+MED025,Calpol (Paracetamol) 120mg/5ml,Paracetamol,Calpol,CAT001,Suspension,120mg/5ml,bottle_60ml,59.42,93.18,308,35,120,Irregular,SUP005,Active
+MED026,Calpol 6 Plus (Paracetamol) 250mg/5ml,Paracetamol,Calpol 6 Plus,CAT001,Suspension,250mg/5ml,bottle_60ml,75.9,109.29,418,35,90,Irregular,SUP006,Active
+MED027,Arinac (Ibuprofen + Pseudoephedrine) 200mg/30mg,Ibuprofen + Pseudoephedrine,Arinac,CAT001,Tablet,200mg/30mg,tablet,10.17,14.78,396,30,120,Consistent,SUP007,Active
+MED028,Arinac Forte (Ibuprofen + Pseudoephedrine) 400mg/60mg,Ibuprofen + Pseudoephedrine,Arinac Forte,CAT001,Tablet,400mg/60mg,tablet,18.31,25.58,264,30,120,Seasonal,SUP008,Active
+MED029,Xefo (Lornoxicam) 8mg,Lornoxicam,Xefo,CAT001,Tablet,8mg,tablet,37.84,57.19,528,25,90,Irregular,SUP009,Active
+MED030,Mobic (Meloxicam) 15mg,Meloxicam,Mobic,CAT001,Tablet,15mg,tablet,28.02,38.82,286,25,120,Growing,SUP010,Active
+MED031,Augmentin 625 (Amoxicillin + Clavulanic Acid) 625mg,Amoxicillin + Clavulanic Acid,Augmentin 625,CAT002,Tablet,625mg,tablet,37.5,53.49,160,25,120,Seasonal,SUP001,Active
+MED032,Augmentin 1g (Amoxicillin + Clavulanic Acid) 1000mg,Amoxicillin + Clavulanic Acid,Augmentin 1g,CAT002,Tablet,1000mg,tablet,63.04,90.39,208,35,90,Seasonal,SUP002,Active
+MED033,Augmentin DS Susp (Amoxicillin + Clavulanic Acid) 312.5mg/5ml,Amoxicillin + Clavulanic Acid,Augmentin DS Susp,CAT002,Suspension,312.5mg/5ml,bottle_100ml,173.08,251.83,144,25,150,Seasonal,SUP003,Active
+MED034,Amoxil (Amoxicillin) 500mg,Amoxicillin,Amoxil,CAT002,Capsule,500mg,capsule,14.15,21.37,208,30,150,Irregular,SUP004,Active
+MED035,Amoxil Susp (Amoxicillin) 250mg/5ml,Amoxicillin,Amoxil Susp,CAT002,Suspension,250mg/5ml,bottle_60ml,70.04,102.91,240,35,150,Irregular,SUP005,Active
+MED036,Cravit (Levofloxacin) 500mg,Levofloxacin,Cravit,CAT002,Tablet,500mg,tablet,56.81,77.08,288,25,180,Declining,SUP006,Active
+MED037,Cravit 250 (Levofloxacin) 250mg,Levofloxacin,Cravit 250,CAT002,Tablet,250mg,tablet,30.92,47.78,288,25,150,Declining,SUP007,Active
+MED038,Ciproxin (Ciprofloxacin) 500mg,Ciprofloxacin,Ciproxin,CAT002,Tablet,500mg,tablet,33.64,53.85,208,35,90,Growing,SUP008,Active
+MED039,Ciproxin 250 (Ciprofloxacin) 250mg,Ciprofloxacin,Ciproxin 250,CAT002,Tablet,250mg,tablet,20.67,30.2,368,35,90,Declining,SUP009,Active
+MED040,Zithromax (Azithromycin) 500mg,Azithromycin,Zithromax,CAT002,Capsule,500mg,capsule,71.56,108.81,224,30,120,Seasonal,SUP010,Active
+MED041,Zithromax 250 (Azithromycin) 250mg,Azithromycin,Zithromax 250,CAT002,Capsule,250mg,capsule,45.82,68.91,128,30,120,Growing,SUP001,Active
+MED042,Zithromax Susp (Azithromycin) 200mg/5ml,Azithromycin,Zithromax Susp,CAT002,Suspension,200mg/5ml,bottle_30ml,199.0,280.49,208,35,180,Declining,SUP002,Active
+MED043,Klaricid (Clarithromycin) 500mg,Clarithromycin,Klaricid,CAT002,Tablet,500mg,tablet,88.24,120.25,160,25,120,Growing,SUP003,Active
+MED044,Klaricid Susp (Clarithromycin) 125mg/5ml,Clarithromycin,Klaricid Susp,CAT002,Suspension,125mg/5ml,bottle_60ml,234.4,347.82,224,30,120,Consistent,SUP004,Active
+MED045,Cefspan (Cefixime) 400mg,Cefixime,Cefspan,CAT002,Capsule,400mg,capsule,98.41,136.89,224,30,90,Declining,SUP005,Active
+MED046,Cefspan Susp (Cefixime) 100mg/5ml,Cefixime,Cefspan Susp,CAT002,Suspension,100mg/5ml,bottle_30ml,227.05,324.36,336,30,150,Growing,SUP006,Active
+MED047,Velosef (Cephradine) 500mg,Cephradine,Velosef,CAT002,Capsule,500mg,capsule,23.76,35.36,272,25,120,Seasonal,SUP007,Active
+MED048,Velosef Susp (Cephradine) 250mg/5ml,Cephradine,Velosef Susp,CAT002,Suspension,250mg/5ml,bottle_60ml,111.56,158.72,160,30,150,Irregular,SUP008,Active
+MED049,Flagyl (Metronidazole) 400mg,Metronidazole,Flagyl,CAT002,Tablet,400mg,tablet,6.23,9.32,384,25,90,Growing,SUP009,Active
+MED050,Flagyl Susp (Metronidazole) 200mg/5ml,Metronidazole,Flagyl Susp,CAT002,Suspension,200mg/5ml,bottle_60ml,65.63,93.83,240,25,90,Seasonal,SUP010,Active
+MED051,Septran DS (Co-trimoxazole) 800mg/160mg,Co-trimoxazole,Septran DS,CAT002,Tablet,800mg/160mg,tablet,11.86,18.11,160,30,90,Irregular,SUP001,Active
+MED052,Diflucan (Fluconazole) 150mg,Fluconazole,Diflucan,CAT002,Capsule,150mg,capsule,114.02,180.96,208,25,180,Growing,SUP002,Active
+MED053,Daktarin Oral Gel (Miconazole) 20mg/g,Miconazole,Daktarin Oral Gel,CAT002,Gel,20mg/g,tube_40g,153.12,233.02,160,30,180,Growing,SUP003,Active
+MED054,Canesten Cream (Clotrimazole) 1%,Clotrimazole,Canesten Cream,CAT002,Cream,1%,tube_20g,111.8,155.2,224,35,150,Consistent,SUP004,Active
+MED055,Zovirax (Acyclovir) 400mg,Acyclovir,Zovirax,CAT002,Tablet,400mg,tablet,45.75,64.1,256,35,150,Declining,SUP005,Active
+MED056,Zyrtec (Cetirizine) 10mg,Cetirizine,Zyrtec,CAT003,Tablet,10mg,tablet,8.72,14.18,320,35,120,Consistent,SUP006,Active
+MED057,Zyrtec Oral Sol (Cetirizine) 5mg/5ml,Cetirizine,Zyrtec Oral Sol,CAT003,Syrup,5mg/5ml,bottle_60ml,85.98,123.01,304,35,120,Consistent,SUP007,Active
+MED058,Clarityne (Loratadine) 10mg,Loratadine,Clarityne,CAT003,Tablet,10mg,tablet,11.65,18.41,160,30,150,Consistent,SUP008,Active
+MED059,Telfast 120 (Fexofenadine) 120mg,Fexofenadine,Telfast 120,CAT003,Tablet,120mg,tablet,27.84,41.04,384,30,180,Seasonal,SUP009,Active
+MED060,Telfast 180 (Fexofenadine) 180mg,Fexofenadine,Telfast 180,CAT003,Tablet,180mg,tablet,36.57,51.1,256,35,120,Seasonal,SUP010,Active
+MED061,Kestine (Ebastine) 20mg,Ebastine,Kestine,CAT003,Tablet,20mg,tablet,32.55,46.94,160,25,120,Consistent,SUP001,Active
+MED062,Kestine 10 (Ebastine) 10mg,Ebastine,Kestine 10,CAT003,Tablet,10mg,tablet,19.09,31.16,192,25,90,Seasonal,SUP002,Active
+MED063,Avamys (Fluticasone Furoate) 27.5mcg,Fluticasone Furoate,Avamys,CAT003,Nasal Spray,27.5mcg,bottle_120d,436.22,583.51,144,30,180,Consistent,SUP003,Active
+MED064,Nasorex (Mometasone Furoate) 50mcg,Mometasone Furoate,Nasorex,CAT003,Nasal Spray,50mcg,bottle_120d,341.04,496.12,240,30,180,Irregular,SUP004,Active
+MED065,Ventolin Inhaler (Salbutamol) 100mcg/puff,Salbutamol,Ventolin Inhaler,CAT003,Inhaler,100mcg/puff,inhaler,204.1,302.18,224,25,180,Seasonal,SUP005,Active
+MED066,Ventolin Syrup (Salbutamol) 2mg/5ml,Salbutamol,Ventolin Syrup,CAT003,Syrup,2mg/5ml,bottle_120ml,72.92,101.82,336,25,120,Irregular,SUP006,Active
+MED067,Seretide Evohaler (Salmeterol + Fluticasone) 25/125mcg,Salmeterol + Fluticasone,Seretide Evohaler,CAT003,Inhaler,25/125mcg,inhaler,783.75,1082.88,272,30,150,Seasonal,SUP007,Active
+MED068,Symbicort Turbuhaler (Budesonide + Formoterol) 160/4.5mcg,Budesonide + Formoterol,Symbicort Turbuhaler,CAT003,Inhaler,160/4.5mcg,inhaler,914.95,1243.78,208,35,180,Growing,SUP008,Active
+MED069,Singulair 10 (Montelukast) 10mg,Montelukast,Singulair 10,CAT003,Tablet,10mg,tablet,49.21,71.9,400,30,150,Irregular,SUP009,Active
+MED070,Singulair 5 (Montelukast) 5mg,Montelukast,Singulair 5,CAT003,Chewable,5mg,tablet,38.48,54.01,240,35,180,Growing,SUP010,Active
+MED071,Singulair 4 Sachet (Montelukast) 4mg,Montelukast,Singulair 4 Sachet,CAT003,Granules,4mg,sachet,31.15,47.37,128,35,150,Consistent,SUP001,Active
+MED072,Hydryllin (Aminophylline + Diphenhydramine) 120ml,Aminophylline + Diphenhydramine,Hydryllin,CAT003,Syrup,120ml,bottle_120ml,72.98,111.71,176,25,120,Declining,SUP002,Active
+MED073,Cofcol (Dextromethorphan + Pseudoephedrine) 120ml,Dextromethorphan + Pseudoephedrine,Cofcol,CAT003,Syrup,120ml,bottle_120ml,79.26,118.4,160,25,180,Consistent,SUP003,Active
+MED074,Pulmonol (Chlorpheniramine + Ephedrine) 120ml,Chlorpheniramine + Ephedrine,Pulmonol,CAT003,Syrup,120ml,bottle_120ml,72.33,104.07,240,25,120,Consistent,SUP004,Active
+MED075,Acefyl Cough (Acefylline Piperazine) 120ml,Acefylline Piperazine,Acefyl Cough,CAT003,Syrup,120ml,bottle_120ml,84.8,129.43,224,35,180,Consistent,SUP005,Active
+MED076,Sancos (Pholcodine) 120ml,Pholcodine,Sancos,CAT003,Syrup,120ml,bottle_120ml,95.36,142.63,320,30,180,Irregular,SUP006,Active
+MED077,Xynosine (Xylometazoline) 0.1%,Xylometazoline,Xynosine,CAT003,Nasal Drops,0.1%,bottle_15ml,63.52,94.89,272,30,120,Declining,SUP007,Active
+MED078,Otrivin (Xylometazoline) 0.1%,Xylometazoline,Otrivin,CAT003,Nasal Spray,0.1%,bottle_10ml,92.02,133.54,208,30,180,Seasonal,SUP008,Active
+MED079,Actifed (Triprolidine + Pseudoephedrine) 2.5mg/60mg,Triprolidine + Pseudoephedrine,Actifed,CAT003,Tablet,2.5mg/60mg,tablet,8.33,12.09,368,35,90,Irregular,SUP009,Active
+MED080,Actifed DM (Triprolidine + Dextromethorphan) 120ml,Triprolidine + Dextromethorphan,Actifed DM,CAT003,Syrup,120ml,bottle_120ml,81.9,124.62,208,25,180,Growing,SUP010,Active
+MED081,Risek 20 (Omeprazole) 20mg,Omeprazole,Risek 20,CAT004,Capsule,20mg,capsule,23.59,35.87,128,30,180,Declining,SUP001,Active
+MED082,Risek 40 (Omeprazole) 40mg,Omeprazole,Risek 40,CAT004,Capsule,40mg,capsule,41.01,59.54,208,30,150,Irregular,SUP002,Active
+MED083,Risek Insta 20 (Omeprazole + Sodium Bicarb) 20mg,Omeprazole + Sodium Bicarb,Risek Insta 20,CAT004,Sachet,20mg,sachet,33.32,50.16,176,25,180,Declining,SUP003,Active
+MED084,Nexum 20 (Esomeprazole) 20mg,Esomeprazole,Nexum 20,CAT004,Tablet,20mg,tablet,32.9,48.58,224,25,90,Declining,SUP004,Active
+MED085,Nexum 40 (Esomeprazole) 40mg,Esomeprazole,Nexum 40,CAT004,Tablet,40mg,tablet,53.76,75.73,224,25,120,Growing,SUP005,Active
+MED086,Controloc 20 (Pantoprazole) 20mg,Pantoprazole,Controloc 20,CAT004,Tablet,20mg,tablet,28.47,42.21,304,25,180,Growing,SUP006,Active
+MED087,Controloc 40 (Pantoprazole) 40mg,Pantoprazole,Controloc 40,CAT004,Tablet,40mg,tablet,47.23,66.19,272,30,150,Declining,SUP007,Active
+MED088,Gaviscon Liquid (Sodium Alginate + Potassium Bicarb) 120ml,Sodium Alginate + Potassium Bicarb,Gaviscon Liquid,CAT004,Suspension,120ml,bottle_120ml,134.51,197.22,160,25,150,Consistent,SUP008,Active
+MED089,Gaviscon Advance (Sodium Alginate) 150ml,Sodium Alginate,Gaviscon Advance,CAT004,Suspension,150ml,bottle_150ml,207.83,310.25,384,35,180,Growing,SUP009,Active
+MED090,Mucaine (Oxetacaine + Al Hydroxide) 120ml,Oxetacaine + Al Hydroxide,Mucaine,CAT004,Suspension,120ml,bottle_120ml,91.22,143.05,208,35,120,Declining,SUP010,Active
+MED091,Motilium (Domperidone) 10mg,Domperidone,Motilium,CAT004,Tablet,10mg,tablet,8.86,13.92,128,35,90,Irregular,SUP001,Active
+MED092,Motilium Susp (Domperidone) 5mg/5ml,Domperidone,Motilium Susp,CAT004,Suspension,5mg/5ml,bottle_120ml,80.86,124.2,208,25,150,Growing,SUP002,Active
+MED093,Maxolon (Metoclopramide) 10mg,Metoclopramide,Maxolon,CAT004,Tablet,10mg,tablet,5.23,8.09,192,25,180,Consistent,SUP003,Active
+MED094,Imodium (Loperamide) 2mg,Loperamide,Imodium,CAT004,Capsule,2mg,capsule,7.45,11.72,240,35,120,Seasonal,SUP004,Active
+MED095,Entamizole (Diloxanide Furoate + Metronidazole) 250mg/200mg,Diloxanide Furoate + Metronidazole,Entamizole,CAT004,Tablet,250mg/200mg,tablet,10.96,16.93,256,35,180,Seasonal,SUP005,Active
+MED096,Entamizole DS (Diloxanide Furoate + Metronidazole) 500mg/400mg,Diloxanide Furoate + Metronidazole,Entamizole DS,CAT004,Tablet,500mg/400mg,tablet,18.6,26.11,320,30,120,Growing,SUP006,Active
+MED097,Duphalac (Lactulose) 120ml,Lactulose,Duphalac,CAT004,Syrup,120ml,bottle_120ml,181.26,263.5,304,25,180,Growing,SUP007,Active
+MED098,Smecta (Diosmectite) 3g,Diosmectite,Smecta,CAT004,Sachet,3g,sachet,28.98,40.93,192,25,180,Consistent,SUP008,Active
+MED099,ORS Lemon (Oral Rehydration Salts) 20.5g,Oral Rehydration Salts,ORS Lemon,CAT004,Sachet,20.5g,sachet,14.76,22.67,368,30,150,Irregular,SUP009,Active
+MED100,Spasrid (Drotaverine) 40mg,Drotaverine,Spasrid,CAT004,Tablet,40mg,tablet,14.02,20.48,240,35,90,Consistent,SUP010,Active
+MED101,Glucophage 500 (Metformin) 500mg,Metformin,Glucophage 500,CAT005,Tablet,500mg,tablet,5.49,8.68,198,35,180,Declining,SUP001,Active
+MED102,Glucophage 850 (Metformin) 850mg,Metformin,Glucophage 850,CAT005,Tablet,850mg,tablet,7.96,11.54,308,35,180,Consistent,SUP002,Active
+MED103,Glucophage 1000 XR (Metformin Extended Release) 1000mg,Metformin Extended Release,Glucophage 1000 XR,CAT005,Tablet,1000mg,tablet,14.27,20.67,242,25,180,Seasonal,SUP003,Active
+MED104,Getryl 1mg (Glimepiride) 1mg,Glimepiride,Getryl 1mg,CAT005,Tablet,1mg,tablet,8.93,14.28,308,30,150,Seasonal,SUP004,Active
+MED105,Getryl 2mg (Glimepiride) 2mg,Glimepiride,Getryl 2mg,CAT005,Tablet,2mg,tablet,14.66,21.56,352,30,180,Growing,SUP005,Active
+MED106,Getryl 3mg (Glimepiride) 3mg,Glimepiride,Getryl 3mg,CAT005,Tablet,3mg,tablet,19.63,30.58,396,35,120,Consistent,SUP006,Active
+MED107,Galvus 50 (Vildagliptin) 50mg,Vildagliptin,Galvus 50,CAT005,Tablet,50mg,tablet,43.0,60.89,374,25,120,Irregular,SUP007,Active
+MED108,Galvus Met 50/500 (Vildagliptin + Metformin) 50mg/500mg,Vildagliptin + Metformin,Galvus Met 50/500,CAT005,Tablet,50mg/500mg,tablet,47.02,69.22,264,25,120,Consistent,SUP008,Active
+MED109,Januvia 100 (Sitagliptin) 100mg,Sitagliptin,Januvia 100,CAT005,Tablet,100mg,tablet,73.31,112.1,528,25,120,Growing,SUP009,Active
+MED110,Janumet 50/850 (Sitagliptin + Metformin) 50mg/850mg,Sitagliptin + Metformin,Janumet 50/850,CAT005,Tablet,50mg/850mg,tablet,79.08,114.27,330,35,120,Seasonal,SUP010,Active
+MED111,Jardiance 10 (Empagliflozin) 10mg,Empagliflozin,Jardiance 10,CAT005,Tablet,10mg,tablet,84.74,121.42,176,25,150,Irregular,SUP001,Active
+MED112,Jardiance 25 (Empagliflozin) 25mg,Empagliflozin,Jardiance 25,CAT005,Tablet,25mg,tablet,120.07,164.71,264,25,150,Seasonal,SUP002,Active
+MED113,Lopressor 100 (Metoprolol Tartrate) 100mg,Metoprolol Tartrate,Lopressor 100,CAT005,Tablet,100mg,tablet,11.49,18.19,198,30,180,Consistent,SUP003,Active
+MED114,Concor 2.5 (Bisoprolol) 2.5mg,Bisoprolol,Concor 2.5,CAT005,Tablet,2.5mg,tablet,15.47,22.79,264,25,120,Seasonal,SUP004,Active
+MED115,Concor 5 (Bisoprolol) 5mg,Bisoprolol,Concor 5,CAT005,Tablet,5mg,tablet,24.14,34.77,308,25,90,Consistent,SUP005,Active
+MED116,Norvasc 5 (Amlodipine) 5mg,Amlodipine,Norvasc 5,CAT005,Tablet,5mg,tablet,13.93,20.9,418,35,180,Consistent,SUP006,Active
+MED117,Norvasc 10 (Amlodipine) 10mg,Amlodipine,Norvasc 10,CAT005,Tablet,10mg,tablet,24.26,35.67,418,30,90,Irregular,SUP007,Active
+MED118,Softvasc 5 (Amlodipine) 5mg,Amlodipine,Softvasc 5,CAT005,Capsule,5mg,capsule,10.74,15.95,242,35,120,Irregular,SUP008,Active
+MED119,Cozaar 50 (Losartan Potassium) 50mg,Losartan Potassium,Cozaar 50,CAT005,Tablet,50mg,tablet,27.04,41.69,506,25,90,Consistent,SUP009,Active
+MED120,Hyzaar 50/12.5 (Losartan + Hydrochlorothiazide) 50mg/12.5mg,Losartan + Hydrochlorothiazide,Hyzaar 50/12.5,CAT005,Tablet,50mg/12.5mg,tablet,33.09,50.83,352,30,90,Consistent,SUP010,Active
+MED121,Diovan 80 (Valsartan) 80mg,Valsartan,Diovan 80,CAT005,Tablet,80mg,tablet,37.53,55.24,242,25,120,Irregular,SUP001,Active
+MED122,Exforge 5/80 (Amlodipine + Valsartan) 5mg/80mg,Amlodipine + Valsartan,Exforge 5/80,CAT005,Tablet,5mg/80mg,tablet,58.26,86.0,264,30,90,Seasonal,SUP002,Active
+MED123,Lipitor 10 (Atorvastatin) 10mg,Atorvastatin,Lipitor 10,CAT005,Tablet,10mg,tablet,28.68,46.05,242,25,90,Seasonal,SUP003,Active
+MED124,Lipitor 20 (Atorvastatin) 20mg,Atorvastatin,Lipitor 20,CAT005,Tablet,20mg,tablet,47.85,68.9,308,30,90,Growing,SUP004,Active
+MED125,Crestor 10 (Rosuvastatin) 10mg,Rosuvastatin,Crestor 10,CAT005,Tablet,10mg,tablet,41.74,62.49,374,30,180,Consistent,SUP005,Active
+MED126,Surbex Z (Zinc + Vitamin B-Complex + C) High Potency,Zinc + Vitamin B-Complex + C,Surbex Z,CAT006,Tablet,High Potency,tablet,18.19,25.01,378,35,150,Declining,SUP006,Active
+MED127,Theragran Ultra (Multivitamins with Minerals) Multivitamin,Multivitamins with Minerals,Theragran Ultra,CAT006,Tablet,Multivitamin,tablet,23.1,32.44,306,35,90,Growing,SUP007,Active
+MED128,Centrum Silver (Complete Multivitamin) Multivitamin,Complete Multivitamin,Centrum Silver,CAT006,Tablet,Multivitamin,tablet,46.18,63.31,216,35,90,Consistent,SUP008,Active
+MED129,Centrum Adults (Complete Multivitamin) Multivitamin,Complete Multivitamin,Centrum Adults,CAT006,Tablet,Multivitamin,tablet,41.99,57.7,450,30,120,Seasonal,SUP009,Active
+MED130,CaC-1000 Plus Orange (Calcium + Vitamin C + D3 + B6) 1000mg/500mg,Calcium + Vitamin C + D3 + B6,CaC-1000 Plus Orange,CAT006,Effervescent,1000mg/500mg,tablet,24.62,35.52,288,25,180,Declining,SUP010,Active
+MED131,CaC-1000 Plus Lemon (Calcium + Vitamin C + D3 + B6) 1000mg/500mg,Calcium + Vitamin C + D3 + B6,CaC-1000 Plus Lemon,CAT006,Effervescent,1000mg/500mg,tablet,24.78,35.99,144,25,150,Seasonal,SUP001,Active
+MED132,Calcee (Calcium Lactate + Vitamin C) 500mg/500mg,Calcium Lactate + Vitamin C,Calcee,CAT006,Effervescent,500mg/500mg,tablet,19.91,29.55,252,35,90,Declining,SUP002,Active
+MED133,Bonex-D (Calcium Carbonate + Vitamin D3) 600mg/400IU,Calcium Carbonate + Vitamin D3,Bonex-D,CAT006,Tablet,600mg/400IU,tablet,15.55,22.57,198,25,180,Seasonal,SUP003,Active
+MED134,Osnate-D (Ossein Mineral Complex + Vit D) 830mg,Ossein Mineral Complex + Vit D,Osnate-D,CAT006,Tablet,830mg,tablet,18.84,27.3,216,35,180,Irregular,SUP004,Active
+MED135,Evion 400 (Vitamin E) 400mg,Vitamin E,Evion 400,CAT006,Capsule,400mg,capsule,14.18,21.44,288,35,180,Irregular,SUP005,Active
+MED136,Evion 200 (Vitamin E) 200mg,Vitamin E,Evion 200,CAT006,Capsule,200mg,capsule,9.38,13.93,342,30,120,Seasonal,SUP006,Active
+MED137,Neurobion (Vitamin B1 + B6 + B12) 100/200/200mcg,Vitamin B1 + B6 + B12,Neurobion,CAT006,Tablet,100/200/200mcg,tablet,12.57,18.16,342,25,90,Seasonal,SUP007,Active
+MED138,Cobalmin 500 (Mecobalamin) 500mcg,Mecobalamin,Cobalmin 500,CAT006,Tablet,500mcg,tablet,15.7,23.07,198,35,120,Consistent,SUP008,Active
+MED139,Methycobal 500 (Mecobalamin) 500mcg,Mecobalamin,Methycobal 500,CAT006,Tablet,500mcg,tablet,23.08,33.06,450,25,120,Consistent,SUP009,Active
+MED140,Sunny D 200000 (Cholecalciferol (Vit D3)) 200000IU/1ml,Cholecalciferol (Vit D3),Sunny D 200000,CAT006,Injection/Oral,200000IU/1ml,ampoule,159.97,239.07,288,25,120,Consistent,SUP010,Active
+MED141,Indrop-D 200000 (Cholecalciferol (Vit D3)) 200000IU/1ml,Cholecalciferol (Vit D3),Indrop-D 200000,CAT006,Oral Solution,200000IU/1ml,ampoule,183.4,249.77,180,30,180,Declining,SUP001,Active
+MED142,Sunny D Drops (Cholecalciferol (Vit D3)) 400IU/drop,Cholecalciferol (Vit D3),Sunny D Drops,CAT006,Drops,400IU/drop,bottle_15ml,291.81,395.26,216,30,120,Consistent,SUP002,Active
+MED143,Fefol-Vit (Ferrous Sulphate + Folic Acid + B) 150mg/0.5mg,Ferrous Sulphate + Folic Acid + B,Fefol-Vit,CAT006,Capsule,150mg/0.5mg,capsule,15.41,22.62,180,25,150,Irregular,SUP003,Active
+MED144,Iberet Folic 500 (Iron + Vitamin C + B-Complex) 525mg,Iron + Vitamin C + B-Complex,Iberet Folic 500,CAT006,Tablet,525mg,tablet,26.83,37.34,252,35,150,Consistent,SUP004,Active
+MED145,Maltofer (Iron Polymaltose Complex) 100mg,Iron Polymaltose Complex,Maltofer,CAT006,Tablet,100mg,tablet,29.02,41.82,288,35,180,Consistent,SUP005,Active
+MED146,Maltofer Syrup (Iron Polymaltose Complex) 50mg/5ml,Iron Polymaltose Complex,Maltofer Syrup,CAT006,Syrup,50mg/5ml,bottle_120ml,190.99,275.96,378,30,150,Seasonal,SUP006,Active
+MED147,C-Cevit (Vitamin C) 500mg,Vitamin C,C-Cevit,CAT006,Chewable,500mg,tablet,8.38,11.75,342,30,120,Seasonal,SUP007,Active
+MED148,Becozinc (B-Complex + Zinc) Multivitamin,B-Complex + Zinc,Becozinc,CAT006,Capsule,Multivitamin,capsule,11.45,18.35,234,25,180,Seasonal,SUP008,Active
+MED149,Revital (Ginseng + Multivitamins) Daily,Ginseng + Multivitamins,Revital,CAT006,Capsule,Daily,capsule,34.98,50.07,450,30,120,Consistent,SUP009,Active
+MED150,Seven Seas Cod Liver (Cod Liver Oil + Omega 3) 500mg,Cod Liver Oil + Omega 3,Seven Seas Cod Liver,CAT006,Capsule,500mg,capsule,23.04,37.18,270,25,180,Consistent,SUP010,Active

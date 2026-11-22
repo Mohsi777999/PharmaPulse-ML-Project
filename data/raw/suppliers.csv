@@ -1,0 +1,11 @@
+supplier_id,supplier_name,lead_time_days,delivery_reliability,supplier_rating,location,active_status
+SUP001,Premier Pharma Distribution,4,0.96,4.8,Karachi,Active
+SUP002,Indus Healthcare Logistics,7,0.94,4.6,Lahore,Active
+SUP003,Capital MedSupply Corp,5,0.98,4.9,Islamabad,Active
+SUP004,Potohar Pharma Traders,8,0.91,4.2,Rawalpindi,Active
+SUP005,Chenab Medical Wholesalers,10,0.89,4.1,Faisalabad,Active
+SUP006,Khyber Drug Distributors,14,0.88,4.0,Peshawar,Active
+SUP007,Oasis Pharma Network,12,0.92,4.3,Multan,Active
+SUP008,Mehran Health Supplies,6,0.95,4.7,Hyderabad,Active
+SUP009,Chiltan Med Logistics,18,0.86,3.9,Quetta,Active
+SUP010,Punjab National Pharma,9,0.93,4.4,Gujranwala,Active

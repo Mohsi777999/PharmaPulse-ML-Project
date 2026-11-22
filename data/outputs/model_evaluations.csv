@@ -1,0 +1,147 @@
+model_name,module,task_type,evaluation_split,metric_name,metric_value
+Linear Regression,Forecasting,Regression,Validation,MAE,11.28
+Linear Regression,Forecasting,Regression,Validation,RMSE,17.991
+Linear Regression,Forecasting,Regression,Validation,WAPE,51.68
+Linear Regression,Forecasting,Regression,Validation,MAPE,184.37
+Linear Regression,Forecasting,Regression,Validation,R2,0.1543
+Linear Regression,Forecasting,Regression,Test,MAE,11.289
+Linear Regression,Forecasting,Regression,Test,RMSE,19.586
+Linear Regression,Forecasting,Regression,Test,WAPE,53.24
+Linear Regression,Forecasting,Regression,Test,MAPE,185.58
+Linear Regression,Forecasting,Regression,Test,R2,0.1546
+Random Forest,Forecasting,Regression,Validation,MAE,11.481
+Random Forest,Forecasting,Regression,Validation,RMSE,18.182
+Random Forest,Forecasting,Regression,Validation,WAPE,52.6
+Random Forest,Forecasting,Regression,Validation,MAPE,201.27
+Random Forest,Forecasting,Regression,Validation,R2,0.1362
+Random Forest,Forecasting,Regression,Test,MAE,11.477
+Random Forest,Forecasting,Regression,Test,RMSE,19.738
+Random Forest,Forecasting,Regression,Test,WAPE,54.13
+Random Forest,Forecasting,Regression,Test,MAPE,201.28
+Random Forest,Forecasting,Regression,Test,R2,0.1413
+XGBoost,Forecasting,Regression,Validation,MAE,11.419
+XGBoost,Forecasting,Regression,Validation,RMSE,18.135
+XGBoost,Forecasting,Regression,Validation,WAPE,52.32
+XGBoost,Forecasting,Regression,Validation,MAPE,197.75
+XGBoost,Forecasting,Regression,Validation,R2,0.1407
+XGBoost,Forecasting,Regression,Test,MAE,11.411
+XGBoost,Forecasting,Regression,Test,RMSE,19.73
+XGBoost,Forecasting,Regression,Test,WAPE,53.82
+XGBoost,Forecasting,Regression,Test,MAPE,197.75
+XGBoost,Forecasting,Regression,Test,R2,0.142
+Logistic Regression,Expiry Risk,Classification,Validation,Accuracy,0.8986
+Logistic Regression,Expiry Risk,Classification,Validation,Precision,0.5833
+Logistic Regression,Expiry Risk,Classification,Validation,Recall,0.7778
+Logistic Regression,Expiry Risk,Classification,Validation,F1-Score,0.6667
+Logistic Regression,Expiry Risk,Classification,Validation,ROC-AUC,0.9269
+Logistic Regression,Expiry Risk,Classification,Test,Accuracy,0.9571
+Logistic Regression,Expiry Risk,Classification,Test,Precision,0.7727
+Logistic Regression,Expiry Risk,Classification,Test,Recall,0.9444
+Logistic Regression,Expiry Risk,Classification,Test,F1-Score,0.85
+Logistic Regression,Expiry Risk,Classification,Test,ROC-AUC,0.9891
+Random Forest,Expiry Risk,Classification,Validation,Accuracy,0.8696
+Random Forest,Expiry Risk,Classification,Validation,Precision,0.5
+Random Forest,Expiry Risk,Classification,Validation,Recall,0.2778
+Random Forest,Expiry Risk,Classification,Validation,F1-Score,0.3571
+Random Forest,Expiry Risk,Classification,Validation,ROC-AUC,0.9199
+Random Forest,Expiry Risk,Classification,Test,Accuracy,0.9357
+Random Forest,Expiry Risk,Classification,Test,Precision,1.0
+Random Forest,Expiry Risk,Classification,Test,Recall,0.5
+Random Forest,Expiry Risk,Classification,Test,F1-Score,0.6667
+Random Forest,Expiry Risk,Classification,Test,ROC-AUC,0.9754
+Gradient Boosting,Expiry Risk,Classification,Validation,Accuracy,0.9058
+Gradient Boosting,Expiry Risk,Classification,Validation,Precision,0.6923
+Gradient Boosting,Expiry Risk,Classification,Validation,Recall,0.5
+Gradient Boosting,Expiry Risk,Classification,Validation,F1-Score,0.5806
+Gradient Boosting,Expiry Risk,Classification,Validation,ROC-AUC,0.8993
+Gradient Boosting,Expiry Risk,Classification,Test,Accuracy,0.9286
+Gradient Boosting,Expiry Risk,Classification,Test,Precision,0.8333
+Gradient Boosting,Expiry Risk,Classification,Test,Recall,0.5556
+Gradient Boosting,Expiry Risk,Classification,Test,F1-Score,0.6667
+Gradient Boosting,Expiry Risk,Classification,Test,ROC-AUC,0.9704
+XGBoost,Expiry Risk,Classification,Validation,Accuracy,0.8913
+XGBoost,Expiry Risk,Classification,Validation,Precision,0.6154
+XGBoost,Expiry Risk,Classification,Validation,Recall,0.4444
+XGBoost,Expiry Risk,Classification,Validation,F1-Score,0.5161
+XGBoost,Expiry Risk,Classification,Validation,ROC-AUC,0.931
+XGBoost,Expiry Risk,Classification,Test,Accuracy,0.9429
+XGBoost,Expiry Risk,Classification,Test,Precision,0.9167
+XGBoost,Expiry Risk,Classification,Test,Recall,0.6111
+XGBoost,Expiry Risk,Classification,Test,F1-Score,0.7333
+XGBoost,Expiry Risk,Classification,Test,ROC-AUC,0.98
+Linear Regression,Expiry Risk,Regression,Validation,MAE,25.814
+Linear Regression,Expiry Risk,Regression,Validation,RMSE,58.867
+Linear Regression,Expiry Risk,Regression,Validation,R2,0.4286
+Linear Regression,Expiry Risk,Regression,Test,MAE,17.788
+Linear Regression,Expiry Risk,Regression,Test,RMSE,35.485
+Linear Regression,Expiry Risk,Regression,Test,R2,0.6186
+Decision Tree,Expiry Risk,Regression,Validation,MAE,18.84
+Decision Tree,Expiry Risk,Regression,Validation,RMSE,67.115
+Decision Tree,Expiry Risk,Regression,Validation,R2,0.2572
+Decision Tree,Expiry Risk,Regression,Test,MAE,7.332
+Decision Tree,Expiry Risk,Regression,Test,RMSE,25.243
+Decision Tree,Expiry Risk,Regression,Test,R2,0.807
+Random Forest,Expiry Risk,Regression,Validation,MAE,15.339
+Random Forest,Expiry Risk,Regression,Validation,RMSE,44.784
+Random Forest,Expiry Risk,Regression,Validation,R2,0.6693
+Random Forest,Expiry Risk,Regression,Test,MAE,7.767
+Random Forest,Expiry Risk,Regression,Test,RMSE,31.027
+Random Forest,Expiry Risk,Regression,Test,R2,0.7084
+Gradient Boosting,Expiry Risk,Regression,Validation,MAE,19.747
+Gradient Boosting,Expiry Risk,Regression,Validation,RMSE,74.971
+Gradient Boosting,Expiry Risk,Regression,Validation,R2,0.0732
+Gradient Boosting,Expiry Risk,Regression,Test,MAE,6.721
+Gradient Boosting,Expiry Risk,Regression,Test,RMSE,20.997
+Gradient Boosting,Expiry Risk,Regression,Test,R2,0.8665
+Logistic Regression,Stockout Prediction,Classification,Validation,Accuracy,0.7622
+Logistic Regression,Stockout Prediction,Classification,Validation,Precision,0.4534
+Logistic Regression,Stockout Prediction,Classification,Validation,Recall,0.7955
+Logistic Regression,Stockout Prediction,Classification,Validation,F1-Score,0.5776
+Logistic Regression,Stockout Prediction,Classification,Validation,ROC-AUC,0.8511
+Logistic Regression,Stockout Prediction,Classification,Test,Accuracy,0.8005
+Logistic Regression,Stockout Prediction,Classification,Test,Precision,0.5115
+Logistic Regression,Stockout Prediction,Classification,Test,Recall,0.8259
+Logistic Regression,Stockout Prediction,Classification,Test,F1-Score,0.6317
+Logistic Regression,Stockout Prediction,Classification,Test,ROC-AUC,0.8838
+Random Forest,Stockout Prediction,Classification,Validation,Accuracy,0.81
+Random Forest,Stockout Prediction,Classification,Validation,Precision,0.5259
+Random Forest,Stockout Prediction,Classification,Validation,Recall,0.7175
+Random Forest,Stockout Prediction,Classification,Validation,F1-Score,0.6069
+Random Forest,Stockout Prediction,Classification,Validation,ROC-AUC,0.8661
+Random Forest,Stockout Prediction,Classification,Test,Accuracy,0.8442
+Random Forest,Stockout Prediction,Classification,Test,Precision,0.6006
+Random Forest,Stockout Prediction,Classification,Test,Recall,0.7407
+Random Forest,Stockout Prediction,Classification,Test,F1-Score,0.6633
+Random Forest,Stockout Prediction,Classification,Test,ROC-AUC,0.893
+Gradient Boosting,Stockout Prediction,Classification,Validation,Accuracy,0.848
+Gradient Boosting,Stockout Prediction,Classification,Validation,Precision,0.6605
+Gradient Boosting,Stockout Prediction,Classification,Validation,Recall,0.5279
+Gradient Boosting,Stockout Prediction,Classification,Validation,F1-Score,0.5868
+Gradient Boosting,Stockout Prediction,Classification,Validation,ROC-AUC,0.8695
+Gradient Boosting,Stockout Prediction,Classification,Test,Accuracy,0.8688
+Gradient Boosting,Stockout Prediction,Classification,Test,Precision,0.7438
+Gradient Boosting,Stockout Prediction,Classification,Test,Recall,0.5593
+Gradient Boosting,Stockout Prediction,Classification,Test,F1-Score,0.6385
+Gradient Boosting,Stockout Prediction,Classification,Test,ROC-AUC,0.8966
+XGBoost,Stockout Prediction,Classification,Validation,Accuracy,0.7918
+XGBoost,Stockout Prediction,Classification,Validation,Precision,0.4939
+XGBoost,Stockout Prediction,Classification,Validation,Recall,0.7584
+XGBoost,Stockout Prediction,Classification,Validation,F1-Score,0.5982
+XGBoost,Stockout Prediction,Classification,Validation,ROC-AUC,0.872
+XGBoost,Stockout Prediction,Classification,Test,Accuracy,0.8266
+XGBoost,Stockout Prediction,Classification,Test,Precision,0.5556
+XGBoost,Stockout Prediction,Classification,Test,Recall,0.8148
+XGBoost,Stockout Prediction,Classification,Test,F1-Score,0.6607
+XGBoost,Stockout Prediction,Classification,Test,ROC-AUC,0.897
+K-Means (k=3),Clustering,Clustering,All History,Silhouette_Score,0.4201
+K-Means (k=3),Clustering,Clustering,All History,Davies_Bouldin_Index,1.0584
+K-Means (k=3),Clustering,Clustering,All History,Calinski_Harabasz_Index,86.93
+Agglomerative (k=3),Clustering,Clustering,All History,Silhouette_Score,0.371
+Agglomerative (k=3),Clustering,Clustering,All History,Davies_Bouldin_Index,1.1359
+Agglomerative (k=3),Clustering,Clustering,All History,Calinski_Harabasz_Index,81.28
+GMM (k=3),Clustering,Clustering,All History,Silhouette_Score,0.3884
+GMM (k=3),Clustering,Clustering,All History,Davies_Bouldin_Index,1.0943
+GMM (k=3),Clustering,Clustering,All History,Calinski_Harabasz_Index,80.89
+DBSCAN,Clustering,Clustering,All History,Silhouette_Score,0.4311
+DBSCAN,Clustering,Clustering,All History,Davies_Bouldin_Index,0.9801
+DBSCAN,Clustering,Clustering,All History,Calinski_Harabasz_Index,70.7

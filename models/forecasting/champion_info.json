@@ -1,0 +1,67 @@
+{
+  "champion_model": "Linear Regression",
+  "selection_criterion": "Lowest Out-of-Sample Test WAPE",
+  "primary_metric": "WAPE",
+  "test_metrics": {
+    "MAE": 11.289,
+    "RMSE": 19.586,
+    "WAPE": 53.24,
+    "MAPE": 185.58,
+    "R2": 0.1546
+  },
+  "val_metrics": {
+    "MAE": 11.28,
+    "RMSE": 17.991,
+    "WAPE": 51.68,
+    "MAPE": 184.37,
+    "R2": 0.1543
+  },
+  "leaderboard": [
+    {
+      "model_name": "Linear Regression",
+      "test_wape": 53.24,
+      "test_mae": 11.289,
+      "test_rmse": 19.586,
+      "test_r2": 0.1546,
+      "val_wape": 51.68,
+      "val_mae": 11.28,
+      "val_rmse": 17.991,
+      "val_r2": 0.1543,
+      "filename": "linear_regression.joblib",
+      "description": "Multivariate linear regression fitting autoregressive lags and rolling statistics.",
+      "rank": 1,
+      "status": "CHAMPION"
+    },
+    {
+      "model_name": "XGBoost",
+      "test_wape": 53.82,
+      "test_mae": 11.411,
+      "test_rmse": 19.73,
+      "test_r2": 0.142,
+      "val_wape": 52.32,
+      "val_mae": 11.419,
+      "val_rmse": 18.135,
+      "val_r2": 0.1407,
+      "filename": "xgboost_forecasting.joblib",
+      "description": "Gradient boosted decision trees optimizing second-order Taylor expansion loss.",
+      "rank": 2,
+      "status": "BENCHMARK"
+    },
+    {
+      "model_name": "Random Forest",
+      "test_wape": 54.13,
+      "test_mae": 11.477,
+      "test_rmse": 19.738,
+      "test_r2": 0.1413,
+      "val_wape": 52.6,
+      "val_mae": 11.481,
+      "val_rmse": 18.182,
+      "val_r2": 0.1362,
+      "filename": "random_forest.joblib",
+      "description": "Ensemble of 100 decorrelated decision trees capturing non-linear interactions.",
+      "rank": 3,
+      "status": "BENCHMARK"
+    }
+  ],
+  "selection_summary": "Linear Regression achieved the lowest prediction error with Test WAPE of 53.24% (vs XGBoost at 53.82% and Random Forest at 54.13%). It is designated as the sole production model for forward demand forecasting."
+}

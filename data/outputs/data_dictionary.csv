@@ -1,0 +1,165 @@
+file_name,column_name,data_type,description,unit,nullable,example_value,role
+categories.csv,category_id,string,Unique identifier for the medicine category,None,False,CAT001,identifier
+categories.csv,category_name,string,Clinical classification category name,None,False,Pain relief and fever,metadata
+categories.csv,description,string,Detailed scope and description of pharmacological class,None,False,"Analgesics, antipyretics, and NSAIDs",metadata
+medicines.csv,medicine_id,string,Unique identifier for each pharmaceutical SKU,None,False,MED001,identifier
+medicines.csv,medicine_name,string,Full trade and generic description of the product,None,False,Panadol (Paracetamol) 500mg,metadata
+medicines.csv,generic_name,string,Active pharmaceutical ingredient (API),None,False,Paracetamol,metadata
+medicines.csv,brand_name,string,Commercial brand name,None,False,Panadol,metadata
+medicines.csv,category_id,string,Foreign key referencing categories.csv,None,False,CAT001,identifier
+medicines.csv,dosage_form,string,Physical dosage presentation form,None,False,Tablet,metadata
+medicines.csv,strength,string,Active dosage strength,None,False,500mg,metadata
+medicines.csv,unit_of_measure,string,Standard sellable inventory unit,None,False,tablet,metadata
+medicines.csv,unit_cost,float,Baseline acquisition cost per sellable unit,PKR,False,4.50,metadata
+medicines.csv,selling_price,float,Retail dispensing price per sellable unit,PKR,False,7.00,metadata
+medicines.csv,reorder_level,integer,Inventory replenishment trigger threshold,units,False,220,metadata
+medicines.csv,target_stock_days,integer,Target inventory coverage horizon in days,days,False,30,metadata
+medicines.csv,shelf_life_days,integer,Nominal manufactured shelf life duration,days,False,120,metadata
+medicines.csv,demand_pattern,string,"Simulator demand regime (Consistent, Seasonal, Growing, Declining, Irregular)",None,False,Consistent,metadata
+medicines.csv,preferred_supplier_id,string,Foreign key referencing suppliers.csv,None,False,SUP001,identifier
+medicines.csv,active_status,string,Commercial status in pharmacy formulary,None,False,Active,metadata
+suppliers.csv,supplier_id,string,Unique identifier for pharmaceutical distributor,None,False,SUP001,identifier
+suppliers.csv,supplier_name,string,Commercial trading name of supplier,None,False,Premier Pharma Distribution,metadata
+suppliers.csv,lead_time_days,integer,Contracted standard replenishment lead time,days,False,4,metadata
+suppliers.csv,delivery_reliability,float,Probability of on-time fulfillment without delay,probability,False,0.96,metadata
+suppliers.csv,supplier_rating,float,Vendor performance scorecard rating (1 to 5),score,False,4.8,metadata
+suppliers.csv,location,string,Geographical logistics hub city in Pakistan,None,False,Karachi,metadata
+suppliers.csv,active_status,string,Vendor contracting status,None,False,Active,metadata
+medicine_suppliers.csv,medicine_supplier_id,string,Unique identifier for medicine-vendor contract link,None,False,MS00001,identifier
+medicine_suppliers.csv,medicine_id,string,Foreign key referencing medicines.csv,None,False,MED001,identifier
+medicine_suppliers.csv,supplier_id,string,Foreign key referencing suppliers.csv,None,False,SUP001,identifier
+medicine_suppliers.csv,is_preferred_supplier,integer,"Binary flag: 1 for preferred supplier, 0 for secondary",binary,False,1,metadata
+medicine_suppliers.csv,negotiated_unit_cost,float,Contracted purchase unit cost with specific vendor,PKR,False,4.50,metadata
+medicine_suppliers.csv,supplier_lead_time_days,integer,Expected lead time for orders with this vendor,days,False,4,metadata
+batches.csv,batch_id,string,Unique physical batch identifier,None,False,BATCH000001,identifier
+batches.csv,medicine_id,string,Foreign key referencing medicines.csv,None,False,MED001,identifier
+batches.csv,supplier_id,string,Foreign key referencing suppliers.csv,None,False,SUP001,identifier
+batches.csv,purchase_order_id,string,Foreign key referencing purchase_orders.csv,None,False,PO000001,identifier
+batches.csv,received_date,date,Date physical batch was booked into inventory,YYYY-MM-DD,False,2023-12-15,metadata
+batches.csv,expiry_date,date,Strict expiry date when batch becomes unavailable,YYYY-MM-DD,False,2024-03-20,metadata
+batches.csv,initial_quantity,integer,Total quantity originally received in this batch,units,False,150,metadata
+batches.csv,unit_cost,float,Actual procurement unit cost for this specific batch,PKR,False,4.50,metadata
+batches.csv,batch_status,string,"Current lifecycle status (ACTIVE, DEPLETED, EXPIRED)",None,False,DEPLETED,metadata
+purchase_orders.csv,purchase_order_id,string,Unique procurement purchase order identifier,None,False,PO000001,identifier
+purchase_orders.csv,medicine_id,string,Foreign key referencing medicines.csv,None,False,MED001,identifier
+purchase_orders.csv,supplier_id,string,Foreign key referencing suppliers.csv,None,False,SUP001,identifier
+purchase_orders.csv,order_date,date,Date purchase order was generated and dispatched,YYYY-MM-DD,False,2024-01-15,metadata
+purchase_orders.csv,ordered_quantity,integer,Number of units requested in the order,units,False,300,metadata
+purchase_orders.csv,expected_delivery_date,date,Target delivery date based on contracted lead time,YYYY-MM-DD,False,2024-01-19,metadata
+purchase_orders.csv,actual_delivery_date,date,Actual arrival date (empty if pending beyond simulation),YYYY-MM-DD,True,2024-01-19,metadata
+purchase_orders.csv,purchase_order_status,string,Order status: DELIVERED or PENDING,None,False,DELIVERED,metadata
+purchase_orders.csv,unit_cost,float,Agreed unit acquisition price at time of order,PKR,False,4.50,metadata
+deliveries.csv,delivery_id,string,Unique delivery receipt transaction identifier,None,False,DEL000001,identifier
+deliveries.csv,purchase_order_id,string,Foreign key referencing purchase_orders.csv,None,False,PO000001,identifier
+deliveries.csv,medicine_id,string,Foreign key referencing medicines.csv,None,False,MED001,identifier
+deliveries.csv,supplier_id,string,Foreign key referencing suppliers.csv,None,False,SUP001,identifier
+deliveries.csv,delivery_date,date,Date shipment arrived and was accepted into stock,YYYY-MM-DD,False,2024-01-19,metadata
+deliveries.csv,delivered_quantity,integer,Number of usable units received,units,False,300,metadata
+deliveries.csv,delivery_status,string,Receipt fulfillment status (DELIVERED),None,False,DELIVERED,metadata
+deliveries.csv,batch_id,string,Foreign key referencing created batch in batches.csv,None,False,BATCH000001,identifier
+daily_demand_sales.csv,date,date,Simulation calendar date,YYYY-MM-DD,False,2024-01-01,identifier
+daily_demand_sales.csv,medicine_id,string,Foreign key referencing medicines.csv,None,False,MED001,identifier
+daily_demand_sales.csv,actual_demand,integer,True stochastic customer demand generated independently of inventory,units,False,25,feature
+daily_demand_sales.csv,units_sold,integer,"Units actually dispensed, constrained by usable stock",units,False,25,metadata
+daily_demand_sales.csv,unfulfilled_demand,integer,Lost sales due to stock exhaustion (actual_demand - units_sold),units,False,0,metadata
+daily_demand_sales.csv,revenue,float,Gross sales revenue generated (units_sold * selling_price),PKR,False,175.00,metadata
+daily_demand_sales.csv,cost_of_goods_sold,float,Actual acquisition cost of FEFO batches consumed,PKR,False,112.50,metadata
+daily_inventory.csv,date,date,Simulation calendar date,YYYY-MM-DD,False,2024-01-01,identifier
+daily_inventory.csv,medicine_id,string,Foreign key referencing medicines.csv,None,False,MED001,identifier
+daily_inventory.csv,opening_stock,integer,Usable inventory available at beginning of the day,units,False,250,metadata
+daily_inventory.csv,received_quantity,integer,New stock added from supplier deliveries on this date,units,False,0,metadata
+daily_inventory.csv,expired_quantity,integer,Stock removed at start of day due to reaching expiry date,units,False,0,metadata
+daily_inventory.csv,units_sold,integer,Total units dispensed to customers on this date,units,False,25,metadata
+daily_inventory.csv,closing_stock,integer,Reconciled usable inventory remaining at end of day,units,False,225,metadata
+daily_inventory.csv,stockout_flag,integer,Binary indicator (1 if closing_stock == 0 or unfulfilled_demand > 0),binary,False,0,metadata
+daily_inventory.csv,days_of_inventory_remaining,float,Estimated coverage days (closing_stock / recent daily demand),days,False,10.5,metadata
+inventory_movements.csv,movement_id,string,Unique sequential transaction ledger movement identifier,None,False,MOV0000001,identifier
+inventory_movements.csv,date,date,Date the inventory transaction occurred,YYYY-MM-DD,False,2024-01-01,metadata
+inventory_movements.csv,medicine_id,string,Foreign key referencing medicines.csv,None,False,MED001,identifier
+inventory_movements.csv,batch_id,string,Foreign key referencing batches.csv,None,False,BATCH000001,identifier
+inventory_movements.csv,movement_type,string,"Transaction category (opening_balance, purchase_receipt, sale, expiry)",None,False,sale,metadata
+inventory_movements.csv,quantity,integer,Magnitude of inventory flow (strictly positive integer),units,False,12,metadata
+inventory_movements.csv,reference_id,string,"Originating business entity (PO, delivery, or daily sales event)",None,False,SALE_2024-01-01_MED001,metadata
+inventory_movements.csv,notes,string,Audit narrative describing the inventory movement,None,False,FEFO sale from batch BATCH000001,metadata
+forecasting_features.csv,date,date,Observation calendar date,YYYY-MM-DD,False,2024-02-01,identifier
+forecasting_features.csv,medicine_id,string,Foreign key referencing medicines.csv,None,False,MED001,identifier
+forecasting_features.csv,actual_demand,integer,Supervised target: actual customer demand on prediction date,units,False,22,target
+forecasting_features.csv,day_of_week,integer,"Day of week index (0 = Monday, 6 = Sunday)",index,False,3,feature
+forecasting_features.csv,day_of_month,integer,Calendar day of month (1 to 31),day,False,1,feature
+forecasting_features.csv,month,integer,Calendar month (1 to 12),month,False,2,feature
+forecasting_features.csv,quarter,integer,Calendar quarter (1 to 4),quarter,False,1,feature
+forecasting_features.csv,is_weekend,integer,Binary flag indicating Saturday or Sunday,binary,False,0,feature
+forecasting_features.csv,lag_1,float,Shifted actual demand from 1 day prior (t-1),units,True,24.0,feature
+forecasting_features.csv,lag_7,float,Shifted actual demand from 7 days prior (t-7),units,True,21.0,feature
+forecasting_features.csv,lag_14,float,Shifted actual demand from 14 days prior (t-14),units,True,26.0,feature
+forecasting_features.csv,lag_28,float,Shifted actual demand from 28 days prior (t-28),units,True,20.0,feature
+forecasting_features.csv,rolling_mean_7,float,7-day rolling mean of past shifted demand,units,True,23.429,feature
+forecasting_features.csv,rolling_mean_14,float,14-day rolling mean of past shifted demand,units,True,22.857,feature
+forecasting_features.csv,rolling_mean_28,float,28-day rolling mean of past shifted demand,units,True,23.107,feature
+forecasting_features.csv,rolling_std_7,float,7-day rolling standard deviation of past shifted demand,units,True,3.125,feature
+forecasting_features.csv,rolling_std_28,float,28-day rolling standard deviation of past shifted demand,units,True,4.218,feature
+expiry_model_data.csv,batch_id,string,Unique batch identifier,None,False,BATCH000001,identifier
+expiry_model_data.csv,medicine_id,string,Foreign key referencing medicines.csv,None,False,MED001,identifier
+expiry_model_data.csv,supplier_id,string,Foreign key referencing suppliers.csv,None,False,SUP001,identifier
+expiry_model_data.csv,received_date,date,Date batch was booked into pharmacy,YYYY-MM-DD,False,2023-12-15,metadata
+expiry_model_data.csv,expiry_date,date,Date batch expired or was scheduled to expire,YYYY-MM-DD,False,2024-03-20,metadata
+expiry_model_data.csv,initial_quantity,integer,Total quantity originally received in this batch,units,False,150,metadata
+expiry_model_data.csv,sold_quantity,integer,Cumulative units successfully sold before expiry,units,False,150,metadata
+expiry_model_data.csv,unsold_quantity_at_expiry,float,Final units unsold and discarded at expiry (NaN if unobserved),units,True,0.0,target
+expiry_model_data.csv,expired_flag,float,"Binary indicator (1 if batch expired with unsold units, NaN if unobserved)",binary,True,0.0,target
+expiry_model_data.csv,unsold_percentage,float,Percentage of initial batch unsold at expiry (NaN if unobserved),percent,True,0.00,target
+expiry_model_data.csv,final_batch_status,string,"Outcome state (EXPIRED, DEPLETED, ACTIVE_AT_SIMULATION_END)",None,False,DEPLETED,metadata
+expiry_prediction_snapshots.csv,snapshot_id,string,Unique pre-expiry snapshot identifier,None,False,SNAP000001,identifier
+expiry_prediction_snapshots.csv,snapshot_date,date,Date snapshot observation was evaluated (expiry - days_to_expiry),YYYY-MM-DD,False,2024-02-19,metadata
+expiry_prediction_snapshots.csv,batch_id,string,Foreign key referencing batches.csv,None,False,BATCH000001,identifier
+expiry_prediction_snapshots.csv,medicine_id,string,Foreign key referencing medicines.csv,None,False,MED001,identifier
+expiry_prediction_snapshots.csv,supplier_id,string,Foreign key referencing suppliers.csv,None,False,SUP001,identifier
+expiry_prediction_snapshots.csv,days_to_expiry,integer,"Lead time horizon to expiry (30, 14, or 7 days)",days,False,30,feature
+expiry_prediction_snapshots.csv,initial_quantity,integer,Initial batch quantity when received,units,False,150,feature
+expiry_prediction_snapshots.csv,remaining_batch_quantity,integer,Remaining unsold stock in this batch as of snapshot date,units,False,45,feature
+expiry_prediction_snapshots.csv,historical_medicine_demand_7d,integer,Sum of medicine demand over the 7 days prior to snapshot date,units,False,160,feature
+expiry_prediction_snapshots.csv,historical_medicine_demand_14d,integer,Sum of medicine demand over the 14 days prior to snapshot date,units,False,315,feature
+expiry_prediction_snapshots.csv,historical_medicine_demand_30d,integer,Sum of medicine demand over the 30 days prior to snapshot date,units,False,680,feature
+expiry_prediction_snapshots.csv,historical_sales_7d,integer,Sum of medicine sales over the 7 days prior to snapshot date,units,False,158,feature
+expiry_prediction_snapshots.csv,historical_sales_14d,integer,Sum of medicine sales over the 14 days prior to snapshot date,units,False,310,feature
+expiry_prediction_snapshots.csv,historical_sales_30d,integer,Sum of medicine sales over the 30 days prior to snapshot date,units,False,670,feature
+expiry_prediction_snapshots.csv,historical_daily_demand,float,Average daily medicine demand over past 30 days,units/day,False,22.67,feature
+expiry_prediction_snapshots.csv,stock_coverage_estimate,float,Estimated days this batch will last at recent demand rate,days,False,1.99,feature
+expiry_prediction_snapshots.csv,batch_age_days,integer,Elapsed days since batch was received (snapshot_date - received_date),days,False,66,feature
+expiry_prediction_snapshots.csv,target_unsold_quantity,float,Supervised regression target: final unsold units at expiry,units,True,0.0,target
+expiry_prediction_snapshots.csv,target_unsold_flag,float,"Supervised binary target: 1 if any units expired unsold, 0 otherwise",binary,True,0.0,target
+expiry_prediction_snapshots.csv,target_expiry_risk_class,string,"Supervised classification target: Low (<5%), Medium (5-15%), High (15-30%), Critical (>=30%)",None,True,Low,target
+stockout_prediction_data.csv,stockout_sample_id,string,Unique sample identifier for purchase order replenishment event,None,False,SO000001,identifier
+stockout_prediction_data.csv,purchase_order_id,string,Foreign key referencing purchase_orders.csv,None,False,PO000310,identifier
+stockout_prediction_data.csv,medicine_id,string,Foreign key referencing medicines.csv,None,False,MED001,identifier
+stockout_prediction_data.csv,supplier_id,string,Foreign key referencing suppliers.csv,None,False,SUP001,identifier
+stockout_prediction_data.csv,order_date,date,Date purchase order was triggered,YYYY-MM-DD,False,2024-01-18,metadata
+stockout_prediction_data.csv,expected_delivery_date,date,Contracted expected delivery date,YYYY-MM-DD,False,2024-01-22,metadata
+stockout_prediction_data.csv,actual_delivery_date,date,Actual arrival date (empty if unobserved/pending),YYYY-MM-DD,True,2024-01-22,metadata
+stockout_prediction_data.csv,usable_stock_at_order,integer,Closing usable inventory on order date,units,False,180,feature
+stockout_prediction_data.csv,outstanding_order_quantity_at_order,integer,Other pending orders for this medicine already in transit,units,False,0,feature
+stockout_prediction_data.csv,historical_demand_7d,integer,Sum of medicine demand in 7 days prior to order date,units,False,165,feature
+stockout_prediction_data.csv,historical_demand_14d,integer,Sum of medicine demand in 14 days prior to order date,units,False,320,feature
+stockout_prediction_data.csv,historical_demand_30d,integer,Sum of medicine demand in 30 days prior to order date,units,False,685,feature
+stockout_prediction_data.csv,average_daily_demand_7d,float,Average daily demand in 7 days prior to order date,units/day,False,23.57,feature
+stockout_prediction_data.csv,average_daily_demand_30d,float,Average daily demand in 30 days prior to order date,units/day,False,22.83,feature
+stockout_prediction_data.csv,demand_std_30d,float,Standard deviation of daily demand in 30 days prior to order,units,False,3.45,feature
+stockout_prediction_data.csv,reorder_level,integer,Configured reorder trigger threshold,units,False,220,feature
+stockout_prediction_data.csv,target_stock_days,integer,Configured target stock coverage horizon,days,False,30,feature
+stockout_prediction_data.csv,supplier_lead_time_days,integer,Supplier nominal lead time in days,days,False,4,feature
+stockout_prediction_data.csv,supplier_reliability,float,Supplier contracted delivery reliability probability,probability,False,0.96,feature
+stockout_prediction_data.csv,days_until_expected_delivery,integer,Days from order date to expected arrival,days,False,4,feature
+stockout_prediction_data.csv,target_stockout_before_arrival,float,"Supervised target: 1 if inventory hits 0 strictly between order and arrival, 0 otherwise (NaN if pending)",binary,True,0.0,target
+clustering_features.csv,medicine_id,string,"Unique medicine identifier (kept for interpretation, not model feature)",None,False,MED001,identifier
+clustering_features.csv,average_daily_demand,float,Mean daily demand across baseline observation period,units/day,False,22.45,feature
+clustering_features.csv,demand_std,float,Standard deviation of daily demand across baseline period,units,False,3.85,feature
+clustering_features.csv,demand_coefficient_of_variation,float,Ratio of demand standard deviation to mean (std / mean),ratio,False,0.171,feature
+clustering_features.csv,average_monthly_demand,float,Estimated monthly volume (average_daily_demand * 30.4375),units/month,False,683.32,feature
+clustering_features.csv,total_units_sold,integer,Total cumulative units dispensed across simulation period,units,False,24510,feature
+clustering_features.csv,sales_frequency,float,Proportion of days with non-zero sales (days_with_sales / total_days),ratio,False,0.995,feature
+clustering_features.csv,zero_demand_day_ratio,float,Proportion of days with zero customer demand,ratio,False,0.005,feature
+clustering_features.csv,demand_trend,float,Linear regression trend slope over normalized time axis,slope,False,0.012,feature
+clustering_features.csv,seasonal_strength,float,Range between peak and trough monthly mean demand relative to mean,ratio,False,0.125,feature
+clustering_features.csv,average_daily_sales,float,Mean daily dispensed units,units/day,False,22.38,feature
+clustering_features.csv,stockout_day_ratio,float,Proportion of days with stockout flag == 1,ratio,False,0.042,feature
+clustering_features.csv,unfulfilled_demand_ratio,float,Proportion of total demand lost due to stockout,ratio,False,0.003,feature

@@ -1,0 +1,7 @@
+category_id,category_name,description
+CAT001,Pain relief and fever,"Analgesics, antipyretics, and non-steroidal anti-inflammatory drugs (NSAIDs)"
+CAT002,Anti-infectives,"Antibiotics, antifungals, antivirals, and antimicrobial agents"
+CAT003,Respiratory and cold,"Antihistamines, decongestants, cough syrups, bronchodilators, and anti-asthmatics"
+CAT004,Gastrointestinal,"Proton pump inhibitors, antacids, anti-diarrheals, laxatives, and anti-emetics"
+CAT005,Chronic care,"Cardiovascular, antihypertensive, anti-diabetic, and lipid-lowering therapies"
+CAT006,Vitamins and supplements,"Multivitamins, minerals, calcium supplements, and nutritional therapies"
