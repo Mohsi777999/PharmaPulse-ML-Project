@@ -6,6 +6,14 @@
 **Primary Objective:** Apply advanced Machine Learning techniques to pharmaceutical demand forecasting, batch-level expiry risk prediction, vendor lead-time stockout prediction, and unsupervised medicine sales behaviour clustering.
 
 ---
+## 👥 Project Contributors
+
+| Name | Role | GitHub |
+|---|---|---|
+| Mohsin Ali | Project Developer | [@yourusername](https://github.com/yourusername) |
+| Rafay Raza | Project Collaborator | [@friendusername](https://github.com/friendusername) |
+
+---
 
 ## 1. Executive Summary & Problem Statement
 
