@@ -10,7 +10,7 @@
 
 | Name | Role | GitHub |
 |---|---|---|
-| Mohsin Ali | Project Developer | [@yourusername](https://github.com/yourusername) |
+| Mohsin Ali | Project Developer | [@Mohsi777999](https://github.com/Mohsi777999) |
 | Rafay Raza | Project Collaborator | [@friendusername](https://github.com/friendusername) |
 
 ---
